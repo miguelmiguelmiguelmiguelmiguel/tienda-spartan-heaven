@@ -1,0 +1,99 @@
+.checkout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 3rem 10%;
+    align-items: start;
+}
+
+.checkout-producto img {
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.detalle h2 {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+}
+
+.precio {
+    margin-top: 1rem;
+    color: #d4af37;
+}
+/*FORMULARIO*/
+.checkout-formulario {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.234);
+}
+
+.campo {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+.campo input[type="text"],
+.campo input[type="email"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+.direccion-detalle {
+    display: flex;
+    gap: 0.5rem; /* espacio entre cajas */
+    margin-bottom: 1rem;
+}
+
+.direccion-detalle input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Proporciones de las cajas */
+.direccion-detalle input:nth-child(1) { flex: 2 0 150px; } /* Número más grande */
+.direccion-detalle input:nth-child(2) { flex: 1 0 80px; }  /* Piso más pequeño */
+
+
+
+.campo textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    resize: vertical; /* permite al usuario cambiar la altura */
+    font-family: inherit;
+    font-size: 1rem;
+}
+.check {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+button[type="submit"] {
+    background-color: #d4af37;
+    color: #111;
+    border: none;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #b9942e;
+}

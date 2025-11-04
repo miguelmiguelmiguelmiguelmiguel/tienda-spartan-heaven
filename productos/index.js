@@ -1,0 +1,58 @@
+
+
+//-----------ENLACE DE COMPRA-------------
+
+// Array con todos los productos
+const productosCompra = [
+    // El cambio está en añadir '../' a la ruta de la imagen
+{ id: 1, nombre: "Mechero bala", descripcion: "Mechero que usa Artyom para iluminar o encenderse un cigarro", precio: "89,00 €", imagen: "productos/imagenes/mechero.png" },
+{ id: 2, nombre: "Q-pid", descripcion: "Collar de enlaces de Death Stranding, con acabado metálico envejecido.", precio: "59,00 €", imagen: "productos/imagenes/qpid.png" },
+{ id: 3, nombre: "Emblema de Artorias", descripcion: "Medallón que te abre camino a través de los recuerdos del abismo.", precio: "79,00 €", imagen: "productos/imagenes/artorias.png" },
+{ id: 4, nombre: "Chapa de Hunter", descripcion: "Dog tag que Hunter le dio a Artyom con la misión de llevarla a Polis.", precio: "39,00 €", imagen: "productos/imagenes/chapa.png" },
+{ id: 5, nombre: "Pack de chapas de Nuka Cola", descripcion: "Chapas de Nuka Cola, bebida que se puede encontrar en el yermo.", precio: "49,00 €", imagen: "productos/imagenes/nuka cola.png" },
+{ id: 6, nombre: "Estatuilla de hoguera", descripcion: "Pequeña estatua de madera tallada por un antiguo maestro.", precio: "29,00 €", imagen: "productos/imagenes/hoguera.png" },
+{ id: 7, nombre: "Botiquín de mano", descripcion: "Pequeño botiquín con lo esencial por si algo te pasa.", precio: "34,00 €", imagen: "productos/imagenes/botiquin.png" },
+{ id: 8, nombre: "Tarjetas PAL", descripcion: "Tarjetas para evitar una guerra nuclear.", precio: "22,00 €", imagen: "productos/imagenes/PAL.png" },
+{ id: 9, nombre: "Tabla de tareas", descripcion: "Tabla de tareas de Artyom con brújula.", precio: "25,00 €", imagen: "productos/imagenes/tabla.png" },
+{ id: 10, nombre: "Tomo de piromancia del Gran Pantano", descripcion: "Tomo que usaban los pirománticos.", precio: "60,00 €", imagen: "productos/imagenes/piromanciap.png" },
+{ id: 11, nombre: "Tomo de piromancia de Carthus", descripcion: "Se desarrollaron aisladas de otras formas.", precio: "65,00 €", imagen: "productos/imagenes/piromanciac.png" },
+{ id: 12, nombre: "Tomo de piromancia de Izalith", descripcion: "Tomo que usaban los pirománticos para manipular el caos.", precio: "70,00 €", imagen: "productos/imagenes/piromanciai.png" },
+{ id: 13, nombre: "Escalera en miniatura", descripcion: "Estatuilla de una escalera en miniatura.", precio: "40,00 €", imagen: "productos/imagenes/escalera.png" },
+{ id: 14, nombre: "Cuchillo de trinchera", descripcion: "El cuchillo de trinchera que usa Artyom. No es muy rápido, pero es letal.", precio: "95,00 €", imagen: "productos/imagenes/cuchillo artyom.png" },
+{ id: 15, nombre: "Navaja stiletto", descripcion: "Navaja stiletto que usa Ellie Williams.", precio: "85,00 €", imagen: "productos/imagenes/ellie.png" },
+{ id: 16, nombre: "Espadas del caos", descripcion: "Espadas que pertenecieron a un antiguo espartano condenado por sus errores.", precio: "120,00 €", imagen: "productos/imagenes/caos.png" },
+{ id: 17, nombre: "Omnillave", descripcion: "Arma y herramienta usada por un reconocido ranger galáctico.", precio: "110,00 €", imagen: "productos/imagenes/wrench.png" },
+{ id: 18, nombre: "Cajita sorpresa: FOX Supply", descripcion: "Un envío secreto de la unidad FOXHOUND.", precio: "75,00 €", imagen: "productos/imagenes/FOX.png" },
+{ id: 19, nombre: "Cajita sorpresa: D6 Box", descripcion: "Rescatada de los túneles más profundos del bunker D6.", precio: "80,00 €", imagen: "productos/imagenes/D6.png" },
+{ id: 20, nombre: "Cajita sorpresa: Firefly", descripcion: "Objetos recuperados del caos y la desesperación.", precio: "85,00 €", imagen: "productos/imagenes/firefly.png" },
+{ id: 21, nombre: "Cajita sorpresa", descripcion: "Nadie se ha atrevido a abrirla aún...", precio: "90,00 €", imagen: "productos/imagenes/sorpresa.png" },
+{ id: 22, nombre: "Suscripción", descripcion: "Una suscripción mensual donde recibirás productos cada mes.", precio: "50,00 €", imagen: "productos/imagenes/suscripcion.png" },
+// PRODUCTOS SECRETOS
+{ id: 99, nombre: "dog tag Meryl Silverburgh", descripcion: "dog tag perteneciente a una novata", precio: "14,30 €", imagen: "productos/imagenes/meryl.png" },
+{ id: 100, nombre: "llaveros metro 2033", descripcion: "unos llaveros de la famosa saga de libros", precio: "20,13 €", imagen: "productos/imagenes/metro2033.png" },
+
+
+];
+
+// Función para rellenar el main con los datos del producto
+function mostrarProducto(idProducto) {
+    const producto = productosCompra.find(p => p.id === idProducto);
+    if (!producto) return console.error("Producto no encontrado");
+
+    document.getElementById("producto-img").src = producto.imagen;
+    document.getElementById("producto-img").alt = producto.nombre;
+    document.getElementById("producto-nombre").textContent = producto.nombre;
+    document.getElementById("producto-descripcion").textContent = producto.descripcion;
+    document.getElementById("producto-precio").textContent = producto.precio;
+}
+
+// Detecta qué producto se ha seleccionado desde la URL
+document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    const productoId = parseInt(params.get("id"));
+    if (productoId) {
+        mostrarProducto(productoId);
+    } else {
+        console.warn("No se ha especificado ningún producto en la URL");
+    }
+});

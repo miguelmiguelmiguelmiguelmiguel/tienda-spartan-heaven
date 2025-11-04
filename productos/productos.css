@@ -1,0 +1,132 @@
+/* ================== PRODUCTOS ================== */
+main {
+    padding: 2rem;
+    background-color: #1b1b1b;
+    color: #e8e6e3;
+}
+
+/* ===== CATEGORÍAS ===== */
+.categorias {
+    background-color: #111;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 111, 60, 0.3);
+}
+
+.categorias h3 {
+    text-align: center;
+    color: #ff6f3c;
+    margin-bottom: 1.5rem;
+}
+
+.categorias-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.categoria-card {
+    background-color: #222;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    width: 220px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #333;
+}
+
+.categoria-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(255,111,60,0.6);
+    border-color: #ff6f3c;
+}
+
+.categoria-card h4 {
+    color: #ff6f3c;
+    margin-bottom: 0.5rem;
+}
+
+/* ===== TODOS LOS PRODUCTOS ===== */
+#productos{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.productos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 85%;
+  background: #1e1e1e;
+  color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+  margin: 1rem;
+}
+
+.productos img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.productos .info {
+  padding: 1rem;
+}
+
+.productos h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.productos p {
+  margin-top: 25%;
+}
+
+.botones {
+  display: flex;
+  justify-content:center;
+  gap: 0.5rem;
+}
+
+.productos button {
+  background: #b22222;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.productos button:hover {
+  background: #d32f2f;
+}
+
+/* ===== MENSAJE FINAL ===== */
+.productos-fin {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 2rem 0;
+    border-top: 2px solid #ff6f3c;
+}
+
+.productos-fin h3 {
+    color: #ff6f3c;
+    margin-bottom: 1rem;
+}
+
+.productos-fin p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #ccc;
+}
+
+/* ===== RESPONSIVE ===== */

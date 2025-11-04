@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spartan Heaven - Detalle del Producto</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="compra.css">
+</head>
+<body>
+    <!-- HEADER (puede ser incluido igual que en index.html) -->
+    <header>
+        <div class="header-top">
+            <img src="../imagenes/logoletras.png" alt="">
+
+            <div id="reloj"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../sobre nosotros/sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="../productos/productos.html">Productos</a>
+                <li><a href="../contacto/contacto.html" class="active">Contacto</a></li>
+            </ul>
+            <p><a href="../usuario/usuario.html"><em>Iniciar sesión</em></a> o <a href="../usuario/usuario.html"><em>Registrarse</em></a></p>
+        </nav>
+    </header>
+
+   <main class="checkout">
+    <section class="checkout-producto">
+        <img id="producto-img" src="" alt="" loading="lazy">
+        <div class="detalle">
+            <h2 id="producto-nombre"></h2>
+            <p id="producto-descripcion"></p>
+            <p class="precio">Precio: <strong id="producto-precio"></strong></p>
+        </div>
+    </section>
+
+    <section class="checkout-formulario">
+    <h2><u>Datos de envío</u></h2>
+    <form>
+        <div class="campo">
+            <label>Nombre completo*</label>
+            <input type="text" required placeholder="Tu nombre completo">
+        </div>
+        
+        <label class="inline-campo">
+            Email*
+            <input type="email" required placeholder="tucorreo@gmail.com">
+            Número de teléfono*
+            <input type="text" required placeholder="628123456">
+        </label>
+
+        <div class="campo">
+            <label>Ciudad*</label>
+            <input type="text" required placeholder="Tu ciudad">
+        </div>
+
+        <div class="campo direccion">
+            <label>Dirección*</label>
+            <input type="text" required placeholder="C/ Serrano">
+        </div>
+        <div class="direccion-detalle">
+            <input type="text" placeholder="Número*" required>
+            <input type="text" placeholder="Piso*" required>
+            <input type="text" placeholder="Código postal*" required>
+        </div>
+
+
+        <div class="campo">
+            <label>Comentario</label>
+            <p>Comenta por aquí si deseas algo en especial. Si esa petición modifica el precio final, nos pondremos en contacto mediante el email o número de teléfono proporcionados.</p>
+            <textarea placeholder="Máximo 400 caracteres" maxlength="400" rows="5"></textarea>
+        </div>
+
+        <h4>Extras</h4>
+        <div class="check">
+            <label>
+                <input type="checkbox">
+                No tengo pasaporte de Explorador y lo deseo
+                <input type="checkbox">
+                newsletter fisica
+            </label>
+
+            <label>
+            <input  type="checkbox">
+            me gustaria que mi pedido fuera grabado y dado una historia
+            </label>
+            <div class="campo">
+            <label>al querer un video con narrativa, describe en unas cuantas lineas sobre que lo deseas y tu idea, si tenemos algo que añadir a tu idea nos pondremos en contacto contigo</label>
+            <textarea placeholder="Máximo 200 caracteres" maxlength="200" rows="5"></textarea>
+            </div>
+
+
+        
+        </div>
+
+        <hr>
+            <label>
+                <input type="checkbox" required>
+                Acepto los términos y condiciones*
+
+                <input type="checkbox"  title="Al activar esta pestaña accedes a que podamos usar tu correo para mandarte newsletter">
+                quisiera apuntarme a la newsletter
+            </label>
+        
+        <button type="submit">Finalizar compra</button>
+        <h4><strong>(*campos obligatorios)</strong></h4>
+    </form>
+</section>
+
+</main>
+
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-secciones">
+            <div>
+                <h3>Spartan Heaven</h3>
+                <p>Explora, colecciona y vive historias únicas.</p>
+            </div>
+            <div>
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre nosotros/sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="productos/productos.html">Productos</a></li>
+                    <li><a href="contacto/contacto.html">contacto</a></li>
+                    <li><a href="usuario/usuario.html">acceder</a></li>
+                    
+                </ul>
+            </div>
+            <div>
+                <h3>Contacto</h3>
+                
+                    <p><a href="mailto:contacto@spartanheaven.com"> contacto@spartanheaven.com</a></p>
+                    <p><a href="telto:+34648366259"> +34648366259</a></p>
+                    <p><a href="https://wa.me/34648366259"> escribenos por whatsapp</a></p>
+                
+            </div>
+        </div>
+        <p class="copy">&copy; 2025 Spartan Heaven. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script src="index.js"></script>
+    <script src="productos/index.js"></script>
+</body>
+
+</html>
+
+
+

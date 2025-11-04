@@ -1,0 +1,152 @@
+/* ================== CONTACTO ================== */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.banner .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: #fff;
+    max-width: 600px;
+}
+
+.contacto-banner .banner-text h2 {
+    color: #ff6f3c;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.formulario-contacto {
+    padding: 2rem;
+    text-align: center;
+    background-color: #1b1b1b;
+}
+
+.formulario-contacto h2 {
+    color: #ff6f3c;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #222;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(255, 111, 60, 0.3);
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    color: #ff6f3c;
+    margin-bottom: 0.4rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    background-color: #1a1a1a;
+    border: 1px solid #444;
+    color: #e8e6e3;
+    padding: 0.6rem;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #ff6f3c;
+    box-shadow: 0 0 10px rgba(255, 111, 60, 0.4);
+}
+
+.form-checkbox {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ddd;
+    font-size: 0.9rem;
+}
+
+.form-checkbox a {
+    color: #ff6f3c;
+    text-decoration: none;
+}
+
+.form-checkbox a:hover {
+    text-decoration: underline;
+}
+
+.form-button {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.info-contacto {
+    padding: 2rem;
+    background-color: #111;
+    text-align: center;
+    border-top: 2px solid #ff6f3c;
+}
+
+.info-contacto h2 {
+    color: #ff6f3c;
+    margin-bottom: 1rem;
+}
+
+.info-contacto p {
+    margin-bottom: 0.5rem;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.redes .icono img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.redes .icono img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 6px #ff6f3c);
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 1.2rem;
+    }
+
+    .formulario-contacto {
+        padding: 1rem;
+    }
+
+    .contacto-banner .banner-text h2 {
+        font-size: 1.6rem;
+    }
+}

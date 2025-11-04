@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spartan Heaven - Acceder</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="usuario.css">
+</head>
+<body>
+    <!-- HEADER (puede ser incluido igual que en index.html) -->
+    <header>
+        <div class="header-top">
+            <img src="../imagenes/logoletras.png" alt="">
+            
+            <div id="reloj"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../sobre nosotros/sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="../productos/productos.html">Productos</a>
+                <li><a href="../contacto/contacto.html">Contacto</a></li>
+            </ul>
+            <p><a href="usuario/usuario.html" class="active"><em>Iniciar sesión</em></a> o <a href="../usuario/usuario.html" class="active"><em>Registrarse</em></a></p>
+        </nav>
+    </header>
+
+    <main>
+        <section class="user-banner">
+            <img src="imagenes/banner-usuario.jpg" alt="Acceso a Spartan Heaven">
+            <div class="banner-text">
+            <h2>Bienvenido a Spartan Heaven</h2>
+            <p>Inicia sesión o crea tu cuenta para explorar nuestro universo artesanal.</p>
+            </div>
+        </section>
+
+        <section class="user-forms">
+            <div class="forms-container">
+            <!-- INICIO DE SESIÓN -->
+            <div class="form-login">
+                <h3>Iniciar Sesión</h3>
+                <form action="#" method="post">
+                <div class="form-group">
+                    <label for="login-email">Correo electrónico</label>
+                    <input type="email" id="login-email" name="login-email" placeholder="tuemail@ejemplo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Contraseña</label>
+                    <input type="password" id="login-password" name="login-password" placeholder="********" required>
+                </div>
+                <button type="submit" class="btn">Entrar</button>
+                <p class="small-text"><a href="#">¿Olvidaste tu contraseña?</a></p>
+                </form>
+            </div>
+
+            <!-- CREAR NUEVO USUARIO -->
+            <div class="form-register">
+                <h3>Crear Cuenta</h3>
+                <form action="#" method="post">
+                <div class="form-group">
+                    <label for="reg-nombre">Nombre completo</label>
+                    <input type="text" id="reg-nombre" name="reg-nombre" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-email">Correo electrónico</label>
+                    <input type="email" id="reg-email" name="reg-email" placeholder="tuemail@ejemplo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-password">Contraseña</label>
+                    <input type="password" id="reg-password" name="reg-password" placeholder="********" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-password2">Repetir Contraseña</label>
+                    <input type="password" id="reg-password2" name="reg-password2" placeholder="********" required>
+                </div>
+                <div class="form-checkbox">
+                    <input type="checkbox" id="reg-acepto" required>
+                    <label for="reg-acepto">Acepto los <a href="#">Términos y Condiciones</a> y la Política de Privacidad</label>
+                </div>
+                <button type="submit" class="btn">Crear Cuenta</button>
+                </form>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+   <footer>
+        <div class="footer-secciones">
+            <div>
+                <h3>Spartan Heaven</h3>
+                <p>Explora, colecciona y vive historias únicas.</p>
+            </div>
+            <div>
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="/productos/productos.html">Productos</a></li>
+                    <li><a href="/contacto/contacto.html">contacto</a></li>
+                    <li><a href="usuario.html">acceder</a></li>
+                    
+                </ul>
+            </div>
+            <div>
+                <h3>Contacto</h3>
+                
+                    <p><a href="mailto:contacto@spartanheaven.com"> contacto@spartanheaven.com</a></p>
+                    <p><a href="telto:+34648366259"> +34648366259</a></p>
+                    <p><a href="https://wa.me/34648366259"> escribenos por whatsapp</a></p>
+                
+            </div>
+        </div>
+        <p class="copy">&copy; 2025 Spartan Heaven. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../index.js"></script>
+    <script src="../productos/index.js"></script>
+</body>
+
+</html>

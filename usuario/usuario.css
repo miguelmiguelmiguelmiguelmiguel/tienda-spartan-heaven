@@ -1,0 +1,147 @@
+/* ================== USUARIO ================== */
+.user-banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.user-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.user-banner .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: #fff;
+    max-width: 600px;
+}
+
+.user-banner .banner-text h2 {
+    color: #ff6f3c;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.user-forms {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: #1b1b1b;
+}
+
+.forms-container {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-login, .form-register {
+    background-color: #222;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 320px;
+    box-shadow: 0 0 12px rgba(255,111,60,0.3);
+}
+
+.form-login h3, .form-register h3 {
+    color: #ff6f3c;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    color: #ff6f3c;
+    margin-bottom: 0.4rem;
+}
+
+.form-group input {
+    background-color: #1a1a1a;
+    border: 1px solid #444;
+    color: #e8e6e3;
+    padding: 0.6rem;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #ff6f3c;
+    box-shadow: 0 0 10px rgba(255,111,60,0.4);
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ddd;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.form-checkbox a {
+    color: #ff6f3c;
+    text-decoration: none;
+}
+
+.form-checkbox a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #ff6f3c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff4a00;
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #ff6f3c;
+}
+
+.small-text {
+    text-align: right;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.small-text a {
+    color: #ff6f3c;
+    text-decoration: none;
+}
+
+.small-text a:hover {
+    text-decoration: underline;
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 768px) {
+    .forms-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .user-banner .banner-text h2 {
+        font-size: 1.6rem;
+    }
+}

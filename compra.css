@@ -6,7 +6,7 @@
     align-items: start;
 }
 
-.checkout-producto img {
+.contenedor-productos img {
     width: 100%;
     border-radius: 1rem;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
